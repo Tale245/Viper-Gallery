@@ -7,7 +7,7 @@
   <title>account</title>
   <link rel="stylesheet" href="./pages/index.css">
 </head>
-<body class="body">
+<body class="body"  id="up">
   <header class="header">
     <a href="#" class="header__logo-link"><img class="header__logo" src="./images/VIPERLOGO.svg"></a>
     <p class="header__title">Profile</p>
@@ -21,30 +21,30 @@
     </div>
   </nav>
   <section class="profile">
-    <img class="profile__image" src="./images/profile__image.jpg">
-    <div class="profile__container_main-info">
-    <div class="profile__container_name-subs">
-      <p class="profile__name">Ренат Агаев</p>
-      <div class="profile__container_subs">
-        <p class="profile__subs"><span class="profile__span_number_subscribers">0</span></br>Подписчики</p>
-        <p class="profile__subs"><span class="profile__span_number_subscribes">0</span></br>Подписки</p>
-      </div>
+    <div class="profile__info">
+    <p class="profile__subscribers profile__text"><span class="profile__number-subscribers">0</span></br>Подписчики</p>
+    <h1 class="profile__title">Агаев Ренат</h1>
+    <p class="profile__subscription profile__text"><span class="profile__number-subscription">0</span></br>Подписчики</p>
     </div>
-    <p class="profile__main-info">Я - начинающий фотограф! Надеюсь тебе понравятся мои работы!) 
-      По поводу фотосессии пишите в личные сообщения!</p>
-  </div>
+    <div class="profile__avatars">
+      <img class="profile__avatar" src="./images/card__image.jpg">
+      <img class="profile__avatar" src="./images/card__image4.jpg">
+      <img class="profile__avatar" src="./images/card__image6.jpg">
+    </div>
   </section>
   <section class="buttons-links">
-    <a href="#" class="buttons-links__item">Сообщение</a>
+    <a href="#" class="buttons-links__item">Написать</a>
     <a href="#" class="buttons-links__item">Подписаться</a>
-    <a href="#" class="buttons-links__item">Жалоба</a>
+    <a href="#" class="buttons-links__item">Добавить фото</a>
   </section>
   <section class="elements">
+    <img class="elements__title" src="./images/Gallery of the Beautiful.svg">
+    <div class="elements__container">
     <div class="card">
-      <img class="card__image" src="./images/card__image.jpg">
+      <img class="card__image" src="./images/profile__image.jpg">
     </div>
     <div class="card">
-      <img class="card__image" src="./images/card__image2.jpg">
+      <img class="card__image" src="./images/card__image.jpg">
     </div>
     <div class="card">
       <img class="card__image" src="./images/card__image3.jpg">
@@ -52,10 +52,18 @@
     <div class="card">
       <img class="card__image" src="./images/card__image4.jpg">
     </div>
+    <div class="card">
+      <img class="card__image" src="./images/card__image2.jpg">
+    </div>
+    <div class="card">
+      <img class="card__image" src="./images/card__image6.jpg">
+    </div>
+  </div>
   </section>
   <footer class="footer">
     <p class="footer__author">©Viper Corporation 2022</p>
   </footer>
+  <a href="#up" class="menu-fixed__button"></a>
   <script src="./scripts/index.js"></script>
 </body>
 </html>
