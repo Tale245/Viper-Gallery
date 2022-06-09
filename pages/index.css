@@ -22,5 +22,111 @@
 @import url(../block/footer/__author/footer__author.css);
 @import url(../block/buttons/button-up/button-up.css);
 @import url(../block/buttons/button-add/button-add.css);
-
-
+.popup{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 10px;
+  z-index: 10;
+}
+.popup_active{
+  display: flex;
+}
+.popup__container{
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 10px;
+  background-color: rgba(232, 232, 232, 1);
+  width: 724px;
+  height: 394px;
+}
+.popup__title{
+  margin: 0 auto;
+  margin-top: 23px;
+  margin-bottom: 32px;
+  text-align: center;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 34px;
+  line-height: 41px;
+  color: #000000;
+}
+.popup__form{
+  margin: 0 auto;
+}
+.popup__field{
+  margin: 0 auto;
+  border-radius: 10px;
+  width: 551px;
+  height: 49px;
+  background: #D9D9D9;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 32px;
+  border: none;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.5);
+}
+.popup-button{
+  margin: 0;
+  margin-bottom: 53px;
+  background: none;
+  border: none;
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+.popup__submit-button{
+  background-image: url(../images/submit-button.svg);
+  transition: background-image 200ms ease-in-out;
+}
+.popup__submit-button:hover{
+  background-image: url(../images/submit-button__active.svg);
+}
+.popup__close-button{
+  background-image: url(../images/close-button.svg);
+  transition: background-image 200ms ease-in-out;
+  position: fixed;
+  left: 68.9vw;
+  top: 51.5vh;
+  z-index: 1;
+}
+.popup__close-button:hover{
+  background-image: url(../images/close-button_active.svg);
+}
+.popup__buttons{
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  left: 68.44vw;
+  top: 43vh;
+  background-color: #838383;
+  width: 58px;
+  height: 139px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.popup__overlay{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
