@@ -67,19 +67,19 @@
   </footer>
   <a href="#up" class="button-up"></a>
   <button class="button-add"></button>
-  <div class="popup">
-    <div class="popup__container">
-      <p class="popup__title">Добавить фотографию</p>
-      <button class="popup__close-button popup-button"></button>
-      <form class="popup__form">
-      <input type="url" class="popup__field popup__field_link" required placeholder="Введите ссылку на фотографию">
-      <input type="text" maxlength="30" required class="popup__field popup__field_text"placeholder="Введите комментарий к фотографии">
-      <div class="popup__buttons">
-      <button class="popup__submit-button popup-button"></button>
-      </div>
-      </form>
-    </div>
+  <div class="popup popup-addCard">
     <div class="popup__overlay"></div>
+    <div class="popup__container">
+      <form class="popup__form">
+      <img class="popup__title" src="./images/Add Photo.svg">
+      <input type="url" required class="popup__input popup__input_link" placeholder="Введите ссылку">
+      <input type="text" maxlength="20" class="popup__input popup__input_comment" placeholder="Введите комментарий">
+      <button type="submit" class="popup__sumbit-button-add"><span class="popup__button-span">Добавить</span></button>
+      </form>
+      <div class="popup__user-image">
+      <img class="popup__image" src="./images/addImage.avif">
+      </div>
+    </div>
   </div>
   <script src="./scripts/index.js"></script>
 </body>

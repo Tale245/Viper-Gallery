@@ -1,31 +1,26 @@
-const buttonAddImage = document.querySelector('.button-add');
-const popupAddImage = document.querySelector('.popup');
-const popupAddImageCloseBtn = popupAddImage.querySelector('.popup__close-button')
-const overlay = popupAddImage.querySelector('.popup__overlay')
+const popup = document.querySelector('.popup');
+const buttonAdd = document.querySelector('.button-add');
+const buttonSubmit = document.querySelector('.popup__sumbit-button-add');
+const overlay = document.querySelector('.popup__overlay')
+const inputLink = document.querySelector('.popup__input_link')
+const inputComment = document.querySelector('.popup__input_comment')
 
 const openPopup = () => {
-  popupAddImage.classList.add('popup_active');
+  popup.classList.add('popup_active');
+  document.addEventListener('keyup', closePopupEscape)
 }
-
 const closePopup = () => {
-  popupAddImage.classList.remove('popup_active');
+  popup.classList.remove('popup_active')
+  document.removeEventListener('keyup', closePopupEscape)
 }
-
-const closePopupEscape = (evt) => {
-  if (evt.key === "Escape"){
+const closePopupEscape = (event) => {
+  if (event.key === "Escape"){
     closePopup()
   }
 }
-
-buttonAddImage.addEventListener('click', () => {
+buttonAdd.addEventListener('click', () => {
   openPopup()
-  document.addEventListener('keyup', closePopupEscape)
-})
-popupAddImageCloseBtn.addEventListener('click', () => {
-  closePopup()
-  document.removeEventListener('keyup', closePopupEscape)
 })
 overlay.addEventListener('click', () => {
   closePopup()
 })
-
