@@ -18,8 +18,8 @@
 }
 @media screen and (max-width: 550px) {
   .button-add{
-    left: 2.5vw;
-    bottom: 1.5vw;
+    left: 4.5vw;
+    bottom: 2vw;
     width: 25px;
     height: 25px;
   }

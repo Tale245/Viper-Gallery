@@ -15,8 +15,8 @@
 }
 @media screen and (max-width: 550px) {
   .button-up{
-    right: 2.5vw;
-    bottom: 1.5vw;
+    right: 4.5vw;
+    bottom: 2vw;
     width: 25px;
     height: 25px;
   }
