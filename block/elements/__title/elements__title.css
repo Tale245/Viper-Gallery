@@ -13,8 +13,8 @@
 
   }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 550px) {
   .elements__title{
-    margin-top: 25px;
+    margin-top: 34px;
   }
 }
