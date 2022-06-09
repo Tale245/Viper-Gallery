@@ -1,0 +1,20 @@
+.elements__title{
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 120px;
+  margin-bottom: 37px;
+}
+@media screen and (max-width: 1024px) {
+  .elements__title{
+    margin-top: 55px;
+    margin-bottom: 37px;
+    width: 220px;
+
+  }
+}
+@media screen and (max-width: 1024px) {
+  .elements__title{
+    margin-top: 25px;
+  }
+}

@@ -1,0 +1,11 @@
+.menu{
+  margin: 0 auto;
+  padding-top: 12px;
+  max-width: 501px;
+  max-height: 64px;
+}
+@media screen and (max-width: 550px){
+  .menu{
+    max-width: 142px;
+  }
+}
