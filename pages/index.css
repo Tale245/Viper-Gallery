@@ -362,19 +362,48 @@
 }
 
 
-.menu-fixed__button{
+.button-up{
   position: fixed;
   bottom: 1vh;
   right: 1.5vw;
   width: 50px;
   height: 50px;
   border: none;
-  background: none;
   background-image: url(../images/button-up.svg);
-  background-repeat: no-repeat;
+  background-size: contain;
   cursor: pointer;
   transition: background-image 200ms ease-in-out;
 }
-.menu-fixed__button:hover{
+.button-up:hover{
   background-image: url(../images/button-up_active.svg);
+}
+@media screen and (max-width: 550px) {
+  .button-up{
+    width: 25px;
+    height: 25px;
+  }
+}
+.button-add{
+  position: fixed;
+  bottom: 1vh;
+  left: 1.5vw;
+  background: none;
+  background-image: url(../images/Add-i.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  border: none;
+  cursor: pointer;
+  transition: background-image 200ms ease-in-out;
+}
+.button-add:hover{
+  background-image: url(../images/Add-i_active.svg);
+}
+@media screen and (max-width: 550px) {
+  .button-add{
+    width: 25px;
+    height: 25px;
+  }
 }
