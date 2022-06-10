@@ -1,0 +1,16 @@
+.popup__form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 405.5px;
+}
+@media screen and (max-width: 768px)  {
+  .popup__form{
+    width: 342.5px;
+  }
+}
+@media screen and (max-width: 550px)  {
+  .popup__form{
+    width: inherit;
+  }
+}

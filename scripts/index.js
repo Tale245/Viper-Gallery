@@ -4,6 +4,8 @@ const buttonSubmit = document.querySelector('.popup__sumbit-button-add');
 const overlay = document.querySelector('.popup__overlay')
 const inputLink = document.querySelector('.popup__input_link')
 const inputComment = document.querySelector('.popup__input_comment')
+const elementContainer = document.querySelector('.elements__container')
+const popupForm = document.querySelector('.popup__form')
 
 const openPopup = () => {
   popup.classList.add('popup_active');
@@ -24,3 +26,22 @@ buttonAdd.addEventListener('click', () => {
 overlay.addEventListener('click', () => {
   closePopup()
 })
+
+const copyCard = () => {
+  const cardTemplate =  document.querySelector('#template-card').content
+  const cardElement = cardTemplate.querySelector('.template-card__container').cloneNode(true);
+  const templateImage = cardElement.querySelector('.card__image')
+  templateImage.src = inputLink.value;
+  templateImage.alt = inputComment.value;
+  return cardElement
+}
+const createCard = () => {
+ const cardItem = copyCard();
+ elementContainer.prepend(cardItem)
+}
+function addCard (evt) {
+  evt.preventDefault();
+  createCard()
+  closePopup()
+}
+popupForm.addEventListener('submit', addCard)

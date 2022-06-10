@@ -1,0 +1,23 @@
+.popup__container{
+  margin: 0 auto;
+  display: flex;
+  border-radius: 10px;
+  min-width: 811px;
+  min-height: 490px;
+  background-image: url(../../../images/background-popup-add.png);
+  background-size: cover;
+}
+@media screen and (max-width: 768px)  {
+  .popup__container{
+    min-width: 685px;
+    min-height: 490px;
+  }
+}
+@media screen and (max-width: 550px)  {
+  .popup__container{
+    min-width: 238px;
+    min-height: 493px;
+    flex-direction: column;
+    background-position: -330px;
+  }
+}
