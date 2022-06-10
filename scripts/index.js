@@ -43,5 +43,6 @@ function addCard (evt) {
   evt.preventDefault();
   createCard()
   closePopup()
+  popupForm.reset()
 }
 popupForm.addEventListener('submit', addCard)
