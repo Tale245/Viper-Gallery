@@ -5,6 +5,7 @@ const overlay = document.querySelector('.popup__overlay')
 const inputLink = document.querySelector('.popup__input_link')
 const inputComment = document.querySelector('.popup__input_comment')
 const elementContainer = document.querySelector('.elements__container')
+const newsCardsContainer = document.querySelector('.cards__container')
 const popupForm = document.querySelector('.popup__form')
 
 const openPopup = () => {
@@ -31,6 +32,7 @@ const copyCard = () => {
   const cardTemplate =  document.querySelector('#template-card').content
   const cardElement = cardTemplate.querySelector('.template-card__container').cloneNode(true);
   const templateImage = cardElement.querySelector('.card__image')
+
   templateImage.src = inputLink.value;
   templateImage.alt = inputComment.value;
   return cardElement

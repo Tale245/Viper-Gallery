@@ -1,7 +1,6 @@
-.button-add{
-  position: fixed;
-  bottom: 1vh;
-  left: 1.5vw;
+.menu__button-add_Image{
+  margin: 0;
+  display: flex;
   background: none;
   background-image: url(../../../images/Add-i.svg);
   background-repeat: no-repeat;
@@ -11,16 +10,17 @@
   height: 50px;
   border: none;
   cursor: pointer;
-  transition: background-image 200ms ease-in-out;
+  transition: opacity 200ms ease-in-out;
 }
-.button-add:hover{
-  background-image: url(../../../images/Add-i_active.svg);
+.menu__button-add_Image:hover{
+  opacity: 0.75;
 }
 @media screen and (max-width: 550px) {
-  .button-add{
+  .menu__button-add_Image{
+    margin-bottom: 10px;
     left: 4.5vw;
     bottom: 4.5vw;
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
   }
 }

@@ -4,8 +4,7 @@
   border-radius: 10px;
   min-width: 811px;
   min-height: 490px;
-  background-image: url(../../../images/background-popup-add.png);
-  background-size: cover;
+  background-color: #fff;
 }
 @media screen and (max-width: 768px)  {
   .popup__container{

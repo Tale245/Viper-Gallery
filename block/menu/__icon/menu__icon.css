@@ -1,0 +1,23 @@
+.menu__icon{
+  margin: 0 auto;
+  width: 45px;
+  height: 45px;
+  padding-bottom: 1px;
+  transition: opacity 200ms ease-in-out;
+}
+.menu__icon:hover{
+  opacity: 0.75;
+}
+
+@media screen and (max-width: 768px){
+  .menu__icon{
+    width: 40px;
+    height: 40px;
+  }
+
+}
+@media screen and (max-width: 550px){
+  .menu__icon{
+    height: 25px;
+  }
+}

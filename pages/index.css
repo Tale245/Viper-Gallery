@@ -9,7 +9,8 @@
 /* CSS FOR MENU */
 @import url(../block/menu/menu.css);
 @import url(../block/menu/__items/menu__items.css);
-@import url(../block/menu/__image/menu__image.css);
+@import url(../block/menu/__icon/menu__icon.css);
+@import url(../block/menu/__button-add_Image/menu__button-add_Image.css);
 /* CSS FOR PROFILE */
 @import url(../block/profile/profile.css);
 @import url(../block/profile/__items/profile__items.css);
@@ -28,7 +29,6 @@
 @import url(../block/footer/__author/footer__author.css);
 /* CSS FOR FIXED BUTTON */
 @import url(../block/buttons/button-up/button-up.css);
-@import url(../block/buttons/button-add/button-add.css);
 /* CSS FOR POPUP */
 @import url(../block/popup/popup.css);
 @import url(../block/popup/_active/popup_active.css);
@@ -40,5 +40,3 @@
 @import url(../block/popup/__submit-button-add/popup__submit-button-add.css);
 @import url(../block/popup/__user-image/popup__user-image.css);
 @import url(../block/popup/__image/popup__image.css);
-
-
