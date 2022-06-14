@@ -5,6 +5,7 @@
   grid-template-columns: repeat(3, 1fr);
   max-width: 1009px;
   gap: 23px;
+  z-index: -1;
 }
 @media screen and (max-width: 768px) {
   .elements__container{
