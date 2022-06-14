@@ -40,3 +40,21 @@
 @import url(../block/popup/__submit-button-add/popup__submit-button-add.css);
 @import url(../block/popup/__user-image/popup__user-image.css);
 @import url(../block/popup/__image/popup__image.css);
+.popup__buttons-container{
+  display: flex;
+  justify-content: space-between;
+  width: 405.5px;
+}
+@media screen and (max-width: 768px)  {
+  .popup__buttons-container{
+    width: 342.5px;
+  }
+}
+@media screen and (max-width: 550px)  {
+  .popup__buttons-container{
+    width: inherit;
+  }
+}
+.button-show{
+  margin-right: 10px;
+}

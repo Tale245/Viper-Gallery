@@ -1,5 +1,6 @@
 .popup__image{
   margin: 0 auto;
+  object-fit: cover;
   border-radius: 10px;
   border: 1px solid rgba(140, 140, 140, 1);
   width: 296px;
