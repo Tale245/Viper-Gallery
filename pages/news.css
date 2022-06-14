@@ -9,13 +9,11 @@
 /* CSS FOR MENU */
 @import url(../block/menu/menu.css);
 @import url(../block/menu/__items/menu__items.css);
-@import url(../block/menu/__image/menu__image.css);
+@import url(../block/menu/__icon/menu__icon.css);
+@import url(../block/menu/__button-add_Image/menu__button-add_Image.css);
 /* CSS FOR FOOTER */
 @import url(../block/footer/footer.css);
 @import url(../block/footer/__author/footer__author.css);
-/* CSS FOR FIXED BUTTON */
-@import url(../block/buttons/button-up/button-up.css);
-@import url(../block/buttons/button-add/button-add.css);
 /* CSS FOR POPUP */
 @import url(../block/popup/popup.css);
 @import url(../block/popup/_active/popup_active.css);

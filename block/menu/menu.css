@@ -21,3 +21,16 @@
     min-height: 30px;
   }
 }
+@media screen and (max-width: 768px){
+  .menu{
+    position: fixed;
+    padding-top: 10px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    top: inherit;
+    bottom: 0;
+    width: inherit;
+    min-width: 100vw;
+    min-height: 30px;
+  }
+}
